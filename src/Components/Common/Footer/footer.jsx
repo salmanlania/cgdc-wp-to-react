@@ -35,12 +35,22 @@ const Footer = () => {
                                 <li className="mt-2">
                                     <a className="text-gray-600 text-sm hover:text-black">UAE</a>
                                 </li>
-                                <li className="mt-2">
+                                <div className="my-3">
+                                    {/* <h1 className="font-black uppercase text-lg font-arimo">Head Office</h1> */}
+                                    <p className="mt-2 text-sm text-gray-600 font-jost">
+                                        Office 212, second floor, Pyramid Center, Oud metha, Dubai.
+                                    </p>
+                                    <div className="my-4">
+                                        <p className="my-2 text-sm text-gray-700 font-jost"><FontAwesomeIcon className="me-3" icon={faPhone} /><a href="tel:048719300">048719300</a></p>
+                                        <p className="my-2 text-sm text-gray-700 font-jost"><FontAwesomeIcon className="me-3" icon={faEnvelope} /><a href="mailto:info@cgdc.ae">info@cgdc.ae</a></p>
+                                    </div>
+                                </div>
+                                {/* <li className="mt-2">
                                     <a className="text-gray-600 text-sm hover:text-black">Saudi Arabia</a>
                                 </li>
                                 <li className="mt-2">
                                     <a className="text-gray-600 text-sm hover:text-black">Canada</a>
-                                </li>
+                                </li> */}
                             </nav>
                         </div>
                         <div className="lg:w-1/4 md:w-1/2 w-full px-4">

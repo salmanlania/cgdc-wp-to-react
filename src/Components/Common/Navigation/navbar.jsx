@@ -33,7 +33,7 @@ const Navbar = () => {
 
     const content = (
         <div>
-            <Link to="/" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Home</Link>
+            {/* <Link to="/" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Home</Link> */}
             <Link to="/about" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">About us</Link>
             <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
                 <span className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose cursor-pointer">
@@ -42,9 +42,9 @@ const Navbar = () => {
             </Dropdown>
             <Link to="/projects" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Projects</Link>
             <Link to="/ourteam" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Our Team</Link>
-            <Link to="/careers" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Careers</Link>
-            <Link to="/affiliations" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Affiliations</Link>
-            <Link to="/news" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">News</Link>
+            <Link className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Careers</Link>
+            <Link className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Affiliations</Link>
+            <Link className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">News</Link>
             <Link to="/contact" className="block hover:text-red-800 hover:underline uppercase font-outfit tracking-widest leading-loose">Contact us</Link>
         </div>
     );
@@ -66,19 +66,19 @@ const Navbar = () => {
 
                 {/* Navigation for Desktop */}
                 <nav className="hidden md:flex md:ml-auto font-outfit flex-wrap items-center text-base justify-center">
-                    <Link to="/" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">HOME</span></Link>
-                    <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">ABOUT US</span></Link>
+                    {/* <Link to="/" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">HOME</span></Link> */}
+                    <Link to="/about" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>ABOUT US</span></Link>
                     <Dropdown menu={{ items: servicesMenu }} trigger={['click']}>
                         <span className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}>
-                            <span className="mr-5 py-5 text-xs">OUR SERVICES <CaretDownOutlined /></span>
+                            <span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>OUR SERVICES <CaretDownOutlined /></span>
                         </span>
                     </Dropdown>
-                    <Link to="/projects" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">PROJECTS</span></Link>
-                    <Link to="/ourteam" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">OUR TEAM</span></Link>
-                    <Link to="/careers" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">CAREERS</span></Link>
-                    <Link to="/affiliations" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">AFFILIATIONS</span></Link>
-                    <Link to="/news" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">NEWS</span></Link>
-                    <Link to="/contact" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs">CONTACT US</span></Link>
+                    <Link to="/projects" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>PROJECTS</span></Link>
+                    <Link to="/ourteam" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>OUR TEAM</span></Link>
+                    <Link className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>CAREERS</span></Link>
+                    <Link className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>AFFILIATIONS</span></Link>
+                    <Link className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>NEWS</span></Link>
+                    <Link to="/contact" className={`${isHome ? "text-white" : "text-black"} hover:text-red-800 hover:underline underline-offset-8 cursor-pointer tracking-wider`}><span className="mr-5 py-5 text-xs" style={{fontSize : '14px'}}>CONTACT US</span></Link>
                 </nav>
             </div>
         </header>

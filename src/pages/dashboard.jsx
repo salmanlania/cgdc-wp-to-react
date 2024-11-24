@@ -31,8 +31,8 @@ export const isHome = true;
 const DashBoard = () => {
     useEffect(() => {
         AOS.init({
-            duration: 3000,
-            offset: 0,
+            duration: 5000,
+            offset: 100,
         });
     }, []);
     return (
@@ -52,7 +52,7 @@ const DashBoard = () => {
                         <div className="dotted-overlay"></div>
 
                         <div className="banner-text md:block w-7/12 lg:w-5/12 absolute top-1/2 transform -translate-y-1/2 lg:static lg:top-auto lg:transform-none">
-                            <h1 data-aos="fade-right" className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-bold">Solutions That Redefine Excellence</h1>
+                            <h1 data-aos="fade-right" className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-[51px]" style={{fontWeight : '800'}}>Solutions That Redefine Excellence</h1>
                             <p className="my-3 text-xs">Elevate your engineering game with CGD Consulting. Our solutions are tailored to meet your unique needs, with a focus on innovation, sustainability, and delivering maximum value to your business.</p>
                         </div>
                         <div className="banner-text-right w-6/12">
@@ -71,7 +71,7 @@ const DashBoard = () => {
                         <div className="dotted-overlay"></div>
 
                         <div className="banner-text md:block w-7/12 lg:w-6/12 absolute top-1/2 transform -translate-y-1/2 lg:static lg:top-auto lg:transform-none">
-                            <h1 className="text-white text-4xl lg:text-5xl font-bold">Engineering Excellence That Exceeds Expectations</h1>
+                            <h1 className="text-white text-4xl lg:text-[51px]" style={{fontWeight : '800' , lineHeight : '57px'}}>Engineering Excellence That Exceeds Expectations</h1>
                             <p className="my-3 text-xs">Driven by a passion for innovation and quality, CGD Consulting continues to push the boundaries of engineering excellence...</p>
                         </div>
                         <div className="banner-text-right w-6/12">

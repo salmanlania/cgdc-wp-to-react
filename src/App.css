@@ -45,6 +45,10 @@
 }
  */
 
+ body {
+  font-family: 'Montserrat' !important;;
+ }
+
 .banner {
   position: relative;
   height: 100vh;
